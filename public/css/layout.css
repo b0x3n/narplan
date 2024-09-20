@@ -1,0 +1,117 @@
+/**********************************************************
+ *  narplan/public/css/layout.css                         *
+ **********************************************************
+ *
+ *
+ */
+
+    *, body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: rgba(10, 64, 127, 0.5);
+    }
+
+    .wrapper {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+        #outer {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        #inner {
+            z-index: 2;
+        }
+
+        .filter {
+            position: fixed;
+            top: 64px;
+            left: 0px;
+            width: 100%;
+            height: calc(100vh - (20vh + 64px));
+            background-color: rgba(10, 64, 127, 0.99);
+            z-index: 3;
+        }
+
+        header {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 64px;
+            /* //background-color: rgba(0, 0, 0, 0.25); */
+            background-color: rgba(10, 44, 87, 0.99);
+            z-index: 4;
+        }
+
+            .header_title {
+                position: absolute;
+                top: 15px;
+                width: auto;
+                height: auto;
+                margin-left: 1vw;
+            }
+
+                .header_title_tile {
+                    position: absolute;
+            
+                    width: 4px;
+                    height: 6px;
+            
+                    margin: 1px;
+                    padding: 0px;
+            
+                    background-color: #1E90FF;
+            
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                }
+
+
+    .content {
+        position: absolute;
+        top: 64px;
+        left: 0px;
+        width: 100%;
+        height: calc(100vh - (20vh + 64px));
+        z-index: 5;
+    }
+
+        .content_page {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            padding: 1vw;
+            opacity: 0.01;
+            display: none;
+            color: #FFF;
+        }
+
+            .content_page * {
+                background: none;
+            }
+
+            .content_page h1 {
+                font-family: 'DM Serif Display', serif;
+                font-size: 24px;
+            }
+
+
+    footer {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 20vh;
+        padding: 1vw;
+        background-color: rgba(10, 44, 87, 0.99);
+        z-index: 6;
+    }

@@ -1,0 +1,27 @@
+/**********************************************************
+ *  narplan/public/css/nav.css                            *
+ **********************************************************
+ *
+ *
+ */
+
+    nav {
+        position: absolute;
+        top: 15px;
+        right: 1vw;
+        width: auto;
+        height: 30px;
+        background: none;
+    }
+
+        nav a {
+            position: relative;
+            float: right;
+            color: #FFF;
+            text-decoration: none;
+            margin-left: 2vw;
+            line-height: 28px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            background: none;
+        }
