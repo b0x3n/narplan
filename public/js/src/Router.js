@@ -60,7 +60,8 @@
 
         const __show_page = () => {
 
-            $('#outer').css('background-image', `url(${window.__url}/public/images/finance_${__page}.jpg`);
+            const   __image = $(`#image_${__page}`).css('background-image');
+            $('#outer').css('background-image', __image);
 
             $(`#content_page_${__page}`).css({
                 'opacity': '0.01',
